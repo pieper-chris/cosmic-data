@@ -8,6 +8,9 @@ Please note the following:
 *-This application is using free "[dyno hours](https://devcenter.heroku.com/articles/free-dyno-hours)" provided by Heroku. Therefore, if this calculator application receives no web traffic in a 30-minute period, it will sleep (idle). When sleeping, any user who connects will experience a delayed initial load/start up. In my experience, this delay should not last longer than 8-10 seconds.*
 
 
+*-This applicaiton is currently optimized for desktop users. Uninteded formatting may result from viewing this application on a mobile device.*
+
+
 ## About
 
 This web application provides a unique dark-mode experience for viewing public data relating to space. For those who like dashboard aesthetics, but with interesting information, this application may be of interest to you. Featuring a spinning globe, this real-time interface is a great placeholder for a dark theme on your monitor. As just the first version of this web application, expect much improved features and additions in the future (see "Future Work"). 
@@ -18,7 +21,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ```
 heroku buildpacks:set https://github.com/mars/create-react-app-buildpack
-
 ```
 For more information about this command, you may find [this article]( https://medium.com/@alberto.carlos/deploying-a-react-application-on-heroku-70155d147ce4) helpful.
 
