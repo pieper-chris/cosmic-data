@@ -1,6 +1,42 @@
-For Heroku deployment: https://medium.com/@alberto.carlos/deploying-a-react-application-on-heroku-70155d147ce4
+# Space-Dashboard
+Personal React application for dynamically loading space data.
 
-Used: heroku buildpacks:set https://github.com/mars/create-react-app-buildpack
+**View hosted application at (_https://space-dash.herokuapp.com_)**
+
+Please note the following:
+
+*-This application is using free "[dyno hours](https://devcenter.heroku.com/articles/free-dyno-hours)" provided by Heroku. Therefore, if this calculator application receives no web traffic in a 30-minute period, it will sleep (idle). When sleeping, any user who connects will experience a delayed initial load/start up. In my experience, this delay should not last longer than 8-10 seconds.*
+
+
+## About
+
+This web application provides a unique dark-mode experience for viewing public data relating to space. For those who like dashboard aesthetics, but with interesting information, this application may be of interest to you. Featuring a spinning globe, this real-time interface is a great placeholder for a dark theme on your monitor. As just the first version of this web application, expect much improved features and additions in the future (see [Future Work](###Future work)). 
+
+### Background
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed to Heroku. It is important to note that for successful deployment of this React application to Heroku, the following terminal command was necessary before a successful Heroku build:
+
+```
+heroku buildpacks:set https://github.com/mars/create-react-app-buildpack
+
+```
+For more information about this command, you may find [this article]( https://medium.com/@alberto.carlos/deploying-a-react-application-on-heroku-70155d147ce4) helpful.
+
+### Future Work
+This application is very minimalistic. In the future, expect the minimalistic feel to stay, but with a dense addition of new features and data to explore. The layout may also change to further satisfy the goal of a true dashboard feel. Also expect improved compatability for mobile devices. 
+
+In the meantime, this application should be up and working well. If you have any issues with this application, please contact me [here](https://chris-pieper.bss.design/contact.html). 
+
+
+### Documentation
+For any visitors of this page, I am still new to front-end development even after my computer science degree, which is very deeply concerned with theory, mathematics, and back-end development. I still have much to learn, but that's what is exciting! The major pillars of personal inspiration and instruction behind this application's design/deployment are contained within the following links:
+
+- https://github.com/vasturiano/react-globe.gl
+
+
+
+
+# Full React Documentation
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
