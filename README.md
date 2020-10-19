@@ -10,7 +10,7 @@ Please note the following:
 
 ## About
 
-This web application provides a unique dark-mode experience for viewing public data relating to space. For those who like dashboard aesthetics, but with interesting information, this application may be of interest to you. Featuring a spinning globe, this real-time interface is a great placeholder for a dark theme on your monitor. As just the first version of this web application, expect much improved features and additions in the future (see [Future Work](#Future work)). 
+This web application provides a unique dark-mode experience for viewing public data relating to space. For those who like dashboard aesthetics, but with interesting information, this application may be of interest to you. Featuring a spinning globe, this real-time interface is a great placeholder for a dark theme on your monitor. As just the first version of this web application, expect much improved features and additions in the future (see "Future Work"). 
 
 ### Background
 
@@ -32,6 +32,12 @@ In the meantime, this application should be up and working well. If you have any
 For any visitors of this page, I am still new to front-end development even after my computer science degree, which is very deeply concerned with theory, mathematics, and back-end development. I still have much to learn, but that's what is exciting! The major pillars of personal inspiration and instruction behind this application's design/deployment are contained within the following links:
 
 - https://github.com/vasturiano/react-globe.gl
+
+
+
+
+
+
 
 
 
