@@ -5,6 +5,8 @@ import './App.css';
 function ApodCollapsibleHeader () {
   const [apod, setApod] = useState([]);
   const [toggle, setToggle] = useState(false);
+  const [url_type, setUrl] = useState([]);
+  const [media_type, setMediaType] = useState();
 
   useEffect(() => {
     getApod();
@@ -29,6 +31,8 @@ function ApodCollapsibleHeader () {
     const data = await response.json();
     setApod(data);
     console.log(data);
+    setMediaType(data.media_type);
+    setUrl(((data.media_type) === "video")? data.url : data.hdurl);
   };
 
   const toggle_change = () => {
@@ -46,7 +50,8 @@ function ApodCollapsibleHeader () {
             name={apod.title}
             copyright={apod.copyright}
             explanation={apod.explanation}
-            img_url={apod.hdurl}
+            media_type={media_type}
+            img_url={url_type}
             />
       </div>): null}
    </div>
