@@ -12,11 +12,11 @@ img_url
   return(
     <div className="apod">
       <h1> Title:  {name} </h1>
-      <p> Date: {date} </p>
       <p> Copyright:  {copyright} </p>
       <u> Description </u>
       <p> {explanation} </p>
-      <img id="apod_image" src={img_url} alt="APOD" />
+      <img id="apod_image" src={img_url}
+            alt="APOD currently unavailable :( please try again later!" />
     </div>
   );
 }

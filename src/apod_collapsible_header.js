@@ -11,7 +11,21 @@ function ApodCollapsibleHeader () {
   }, []);
 
   const getApod = async () => {
-    const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=WMtTrqwesceUk1odHg4uWnSjNH2FMdWVQdw0h6zG');
+    /* Get day in YYYY-MM-DD format for fetch*/
+    const today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+    if(dd<10) {dd='0'+dd;};
+    if(mm<10) { mm='0'+mm};
+    var day = yyyy+'-'+mm+'-'+dd;
+    console.log(day);
+    const response = await fetch('https://api.nasa.gov/planetary/apod?'
+      + new URLSearchParams({
+        date: day,
+        hd: true,
+        api_key: 'WMtTrqwesceUk1odHg4uWnSjNH2FMdWVQdw0h6zG',
+      }));
     const data = await response.json();
     setApod(data);
     console.log(data);
@@ -30,7 +44,6 @@ function ApodCollapsibleHeader () {
         <div>
             <Apod
             name={apod.title}
-            date={apod.date}
             copyright={apod.copyright}
             explanation={apod.explanation}
             img_url={apod.hdurl}

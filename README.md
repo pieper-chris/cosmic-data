@@ -1,3 +1,8 @@
+For Heroku deployment: https://medium.com/@alberto.carlos/deploying-a-react-application-on-heroku-70155d147ce4
+
+Used: heroku buildpacks:set https://github.com/mars/create-react-app-buildpack
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
