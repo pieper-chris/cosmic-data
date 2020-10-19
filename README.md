@@ -1,7 +1,7 @@
 # Cosmic-Data
 Personal React application for dynamically loading space data.
 
-**View hosted application at (_https://space-dash.herokuapp.com_)**
+**View hosted application at (_https://cosmic-data.herokuapp.com_)**
 
 Please note the following:
 
