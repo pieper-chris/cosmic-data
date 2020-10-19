@@ -12,10 +12,11 @@ function NeoCollapsibleHeader () {
   }, []);
 
   const getNEOs = async () => {
-    const API_KEY = process.env.REACT_APP_API_KEY;
+    /*const API_KEY = process.env.REACT_APP_API_KEY;*/
+
     const response = await fetch('https://api.nasa.gov/neo/rest/v1/neo/browse?'
       + new URLSearchParams({
-        api_key:API_KEY,
+        api_key: REACT_APP_API_KEY,
       }));
     const data = await response.json();
     setNEOs(data.near_earth_objects);
