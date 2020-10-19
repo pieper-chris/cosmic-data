@@ -10,7 +10,7 @@ Please note the following:
 
 ## About
 
-This web application provides a unique dark-mode experience for viewing public data relating to space. For those who like dashboard aesthetics, but with interesting information, this application may be of interest to you. Featuring a spinning globe, this real-time interface is a great placeholder for a dark theme on your monitor. As just the first version of this web application, expect much improved features and additions in the future (see [Future Work](###Future work)). 
+This web application provides a unique dark-mode experience for viewing public data relating to space. For those who like dashboard aesthetics, but with interesting information, this application may be of interest to you. Featuring a spinning globe, this real-time interface is a great placeholder for a dark theme on your monitor. As just the first version of this web application, expect much improved features and additions in the future (see [Future Work](#Future work)). 
 
 ### Background
 
