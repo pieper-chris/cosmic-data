@@ -15,7 +15,7 @@ function ApodCollapsibleHeader () {
 
   const getApod = async () => {
     /* Get day in YYYY-MM-DD format for fetch*/
-    /*const API_KEY = process.env.REACT_APP_API_KEY;*/
+    const react_app_api_key = process.env.REACT_APP_API_KEY;
     const today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth()+1;
@@ -28,7 +28,7 @@ function ApodCollapsibleHeader () {
       + new URLSearchParams({
         date: day,
         hd: true,
-        api_key: REACT_APP_API_KEY,
+        api_key: react_app_api_key,
       }));
     const data = await response.json();
     setApod(data);
