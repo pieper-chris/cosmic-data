@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Apod from './apod.js';
 import './App.css';
 
+
 function ApodCollapsibleHeader () {
   const [apod, setApod] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -14,6 +15,7 @@ function ApodCollapsibleHeader () {
 
   const getApod = async () => {
     /* Get day in YYYY-MM-DD format for fetch*/
+    const API_KEY = process.env.REACT_APP_API_KEY;
     const today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth()+1;
@@ -26,7 +28,7 @@ function ApodCollapsibleHeader () {
       + new URLSearchParams({
         date: day,
         hd: true,
-        api_key: 'WMtTrqwesceUk1odHg4uWnSjNH2FMdWVQdw0h6zG',
+        api_key: API_KEY,
       }));
     const data = await response.json();
     setApod(data);

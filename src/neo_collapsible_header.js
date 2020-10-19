@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Neo from './neo.js';
 import './App.css';
 
+
 function NeoCollapsibleHeader () {
   const [neos, setNEOs] = useState([]);
   const [toggle, setToggle] = useState(false);
@@ -11,7 +12,11 @@ function NeoCollapsibleHeader () {
   }, []);
 
   const getNEOs = async () => {
-    const response = await fetch('https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=WMtTrqwesceUk1odHg4uWnSjNH2FMdWVQdw0h6zG');
+    const API_KEY = process.env.REACT_APP_API_KEY;
+    const response = await fetch('https://api.nasa.gov/neo/rest/v1/neo/browse?'
+      + new URLSearchParams({
+        api_key:API_KEY,
+      }));
     const data = await response.json();
     setNEOs(data.near_earth_objects);
     console.log(data.near_earth_objects);
