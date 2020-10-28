@@ -25,7 +25,9 @@ heroku buildpacks:set https://github.com/mars/create-react-app-buildpack
 For more information about this command, you may find [this article]( https://medium.com/@alberto.carlos/deploying-a-react-application-on-heroku-70155d147ce4) helpful.
 
 ### Future Work
-This application is very minimalistic. In the future, expect the minimalistic feel to stay, but with a dense addition of new features and data to explore. The layout may also change to further satisfy the goal of a true dashboard feel. Also expect improved compatability for mobile devices. 
+This application is very minimalistic. In the future, expect the minimalistic feel to stay, but with a dense addition of new features and data to explore. The layout may also change to further satisfy the goal of a true dashboard feel. Also expect improved compatability for mobile devices.
+
+Correcting the app to be mobile-friendly is of top importance and will be done in the upcoming update. 
 
 In the meantime, this application should be up and working well. If you have any issues with this application, please contact me [here](https://chris-pieper.bss.design/contact.html). 
 
