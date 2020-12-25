@@ -38,7 +38,7 @@ images
       <u> Images of launch </u>
       {images.map(img => (
         <LaunchImage
-        key={Math.floor(Math.random() * 100)}
+        key={window.crypto.getRandomValues(new Uint32Array(1))}
         img={img}
         />
       ))}
