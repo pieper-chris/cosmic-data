@@ -7,7 +7,7 @@ function Map (props) {
   const [width, setWidth]   = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
   const updateArea = () => {
-    setWidth(window.innerWidth/1.5);
+    setWidth(window.innerWidth);
     setHeight(window.innerHeight/1.5);
 }
   useEffect(() => {
