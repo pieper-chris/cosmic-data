@@ -13,13 +13,18 @@ export default class App extends Component {
     return (
       <>
       <div className="App">
-        <Header />
-        <Map />
-        <ToggleMsg />
-        <ApodCollapsibleHeader />
-        <SpaceXCollapsibleHeader />
-        <NeoCollapsibleHeader />
-        <Footer />
+        <Map/>
+        {/* Adding layers for react "modals"*/}
+        <div className="uiBackground">
+          <Header />
+          <ToggleMsg />
+          <div className="controlPanelBackground">
+            <ApodCollapsibleHeader />
+            <SpaceXCollapsibleHeader />
+            <NeoCollapsibleHeader />
+          </div>
+          <Footer />
+        </div>
       </div>
       </>
   );

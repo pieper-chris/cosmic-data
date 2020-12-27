@@ -8,7 +8,7 @@ date,
 copyright,
 explanation,
 media_type,
-img_url
+img_url,
 }){
   return(
     <div className="apod">

@@ -5,10 +5,10 @@ import './App.css';
 function Map (props) {
   const globeEl = useRef();
   const [width, setWidth]   = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [height, setHeight] = useState(window.innerHeight/1.2);
   const updateArea = () => {
     setWidth(window.innerWidth);
-    setHeight(window.innerHeight/1.5);
+    setHeight(window.innerHeight/1.2);
 }
   useEffect(() => {
     window.addEventListener("resize", updateArea);

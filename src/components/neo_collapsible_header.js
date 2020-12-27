@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Neo from './neo.js';
 import './App.css';
 
@@ -6,6 +6,8 @@ import './App.css';
 function NeoCollapsibleHeader () {
   const [neos, setNEOs] = useState([]);
   const [toggle, setToggle] = useState(false);
+
+  const neo_modal_ref = useRef();
 
   useEffect(() => {
     getNEOs();
@@ -20,12 +22,19 @@ function NeoCollapsibleHeader () {
       }));
     const data = await response.json();
     setNEOs(data.near_earth_objects);
-    console.log(data.near_earth_objects);
   };
 
   const toggle_change = () => {
     setToggle(!toggle);
   };
+
+  /* Allow user to click out of modal by clicking
+     on the background outside of the modal */
+  const closeNeoModal = e => {
+    if(neo_modal_ref.current === e.target){
+      setToggle(!toggle);
+    }
+  }
 
   return (
     <div>
@@ -34,18 +43,24 @@ function NeoCollapsibleHeader () {
       </p>
       {toggle?(
         <div>
-          {neos.map(neo => (
-            <Neo
-            key={neo.id}
-            name={neo.name}
-            h_abs_mag={neo.absolute_magnitude_h}
-            km_diameter={neo.estimated_diameter.kilometers}
-            miles_diameter={neo.estimated_diameter.miles}
-            danger={neo.is_potentially_hazardous_asteroid}
-            link={neo.nasa_jpl_url}
-
-            />
-          ))}
+          <div className="modal_background"
+              ref={neo_modal_ref} onClick={closeNeoModal}>
+            <p className="modal_button"
+            onClick={e => toggle_change()}>-</p>
+            <div className="neo_list_modal">
+                {neos.map(neo => (
+                  <Neo
+                  key={neo.id}
+                  name={neo.name}
+                  h_abs_mag={neo.absolute_magnitude_h}
+                  km_diameter={neo.estimated_diameter.kilometers}
+                  miles_diameter={neo.estimated_diameter.miles}
+                  danger={neo.is_potentially_hazardous_asteroid}
+                  link={neo.nasa_jpl_url}
+                  />
+                ))}
+            </div>
+          </div>
       </div>): null}
    </div>
   );

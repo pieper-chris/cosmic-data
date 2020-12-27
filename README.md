@@ -8,15 +8,11 @@ Please note the following:
 *-This application is using free "[dyno hours](https://devcenter.heroku.com/articles/free-dyno-hours)" provided by Heroku. Therefore, if this calculator application receives no web traffic in a 30-minute period, it will sleep (idle). When sleeping, any user who connects will experience a delayed initial load/start up. In my experience, this delay should not last longer than 8-10 seconds.*
 
 
-*-This applicaiton is currently optimized for desktop users. Uninteded formatting may result from viewing this application on a mobile device.*
-
-## Serious updates and features being pushed up to production tomorrow (12/27)!!
-
 ## About
 
 This web application provides a unique dark-mode experience for viewing public data relating to space. For those who like dashboard aesthetics, but with interesting information, this application may be of interest to you. Featuring a spinning globe, this real-time interface is a great placeholder for a dark theme on your monitor. As just the first version of this web application, expect much improved features and additions in the future (see "Future Work").
 
-### Background
+## Background
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and deployed to Heroku. It is important to note that for successful deployment of this React application to Heroku, the following terminal command was necessary before a successful Heroku build:
 
@@ -25,22 +21,43 @@ heroku buildpacks:set https://github.com/mars/create-react-app-buildpack
 ```
 For more information about this command, you may find [this article]( https://medium.com/@alberto.carlos/deploying-a-react-application-on-heroku-70155d147ce4) helpful.
 
-### Future Work
-This application is very minimalistic. In the future, expect the minimalistic feel to stay, but with a dense addition of new features and data to explore. The layout may also change to further satisfy the goal of a true dashboard feel. Also expect improved compatability for mobile devices. Correcting the app to be mobile-friendly is of top importance and will be done in the upcoming update.
+## Current Version 2.0
 
-In the meantime, this application should be up and working well. If you have any issues with this application, please contact me [here](https://chris-pieper.bss.design/contact.html).
+### What's New
+
+-UI Improvements:
+
+
+![Error Loading Gif](https://github.com/pieper-chris/cosmic-data/blob/master/gifs/cosmic2.gif)
+
+```
+- New SpaceX recent launch feature
+- Mobile compatibility improvements, as promised.
+- Security patches
+    - Addressed unique key allocation using cryptographically strong random values.
+    - https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues
+```
+
+### Previous version 1.2
+![Error Loading Gif](https://github.com/pieper-chris/cosmic-data/blob/master/gifs/cosmic1.gif)
+
+
+```
+- Security Patches
+```
+
+### Future Work
+This application is very minimalistic, but representative of the tools React provides. In the future, expect the minimalistic feel to stay, but with a dense addition of new features and data to explore. The layout may also change to further satisfy the goal of a true dashboard feel. Also expect improved compatibility for mobile devices.
+
+In the meantime, this application should be up and working well. If you have any issues with this application, please contact me [here](https://clpieper.com/contact.html).
 
 
 ### Documentation
 For any visitors of this page, I am still new to front-end development even after my computer science degree, which is very deeply concerned with theory, mathematics, and back-end development. I still have much to learn, but that's what is exciting! The major pillars of personal inspiration and instruction behind this application's design/deployment are contained within the following links:
 
+- https://api.nasa.gov/
+- https://github.com/r-spacex/SpaceX-API
 - https://github.com/vasturiano/react-globe.gl
-
-
-
-
-
-
 
 
 
