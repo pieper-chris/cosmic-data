@@ -193,6 +193,8 @@
   flex-direction: column;
   text-align: center;
   color: #dedede;
+  font-family: monospace;
+  font-size: .8rem;
   z-index: 1;
 }
 
