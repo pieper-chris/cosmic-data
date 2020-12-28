@@ -26,7 +26,7 @@ function ApodCollapsibleHeader () {
     if(dd<10) {dd='0'+dd;};
     if(mm<10) { mm='0'+mm};
     /*Using yesterday's date until after 12-27 apod*/
-    var day = yyyy+'-'+mm+'-'+(dd-1);
+    var day = yyyy+'-'+mm+'-'+dd;
     /*fetch today's apod using our api key and date*/
     const response = await fetch('https://api.nasa.gov/planetary/apod?'
       + new URLSearchParams({
