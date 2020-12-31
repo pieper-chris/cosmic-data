@@ -45,9 +45,7 @@ function NeoCollapsibleHeader () {
         <div>
           <div className="modal_background"
               ref={neo_modal_ref} onClick={closeNeoModal}>
-            <p className="modal_button"
-            onClick={e => toggle_change()}>-</p>
-            <div className="neo_list_modal">
+                <div className="neo_list_modal">
                 {neos.map(neo => (
                   <Neo
                   key={neo.id}
@@ -59,6 +57,11 @@ function NeoCollapsibleHeader () {
                   link={neo.nasa_jpl_url}
                   />
                 ))}
+            </div>
+            <div className="modal_div">
+              <p className="modal_button"
+                  onClick={e => toggle_change()}>×</p>
+
             </div>
           </div>
       </div>): null}

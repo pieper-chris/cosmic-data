@@ -41,6 +41,7 @@ function ApodCollapsibleHeader () {
   };
 
   const toggle_change = () => {
+
     setToggle(!toggle);
   };
 
@@ -60,8 +61,6 @@ function ApodCollapsibleHeader () {
       {toggle?(
         <div className="modal_background"
             ref={apod_modal_ref} onClick={closeApodModal}>
-            <p className="modal_button"
-                onClick={e => toggle_change()}>-</p>
             <Apod
             name={apod.title}
             copyright={apod.copyright}
@@ -69,6 +68,11 @@ function ApodCollapsibleHeader () {
             media_type={media_type}
             img_url={url_type}
             />
+            <div className="modal_div">
+              <p className="modal_button"
+                  onClick={e => toggle_change()}>×</p>
+
+            </div>
         </div>
     ): null}
    </div>

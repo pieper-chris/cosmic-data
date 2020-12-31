@@ -44,8 +44,6 @@ function SpaceXCollapsibleHeader () {
         <div>
           <div className="modal_background"
               ref={spaceX_modal_ref} onClick={spacexModal}>
-            <p className="modal_button"
-              onClick={e => toggle_change()}>-</p>
               <div className="spacex_modal">
                 <SpaceXLaunch
                   name={launch.name}
@@ -56,6 +54,11 @@ function SpaceXCollapsibleHeader () {
                   article={launch.links.article}
                   images={launch.links.flickr.original}
                 />
+              </div>
+              <div className="modal_div">
+                <p className="modal_button"
+                    onClick={e => toggle_change()}>×</p>
+
               </div>
           </div>
       </div>): null}

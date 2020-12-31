@@ -28,7 +28,7 @@ images
                 </p>
               </td>
               <td>
-                <p> <a href={article} target="_blank" rel="noopener noreferrer" > Article </a>
+                <p> | <a href={article} target="_blank" rel="noopener noreferrer" > Article </a>
                 </p>
               </td>
             </tr>
