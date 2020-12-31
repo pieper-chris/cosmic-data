@@ -21,10 +21,14 @@ heroku buildpacks:set https://github.com/mars/create-react-app-buildpack
 ```
 For more information about this command, you may find [this article]( https://medium.com/@alberto.carlos/deploying-a-react-application-on-heroku-70155d147ce4) helpful.
 
-## Current Version 2.0
+## Current Version 2.1
 
 ### What's New
+```
+- UI fix to stabilize pop-up exit button layout for some screen sizes
+```
 
+### Previous version 2.0
 -UI Improvements:
 
 
@@ -38,7 +42,7 @@ For more information about this command, you may find [this article]( https://me
     - https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues
 ```
 
-### Previous version 1.2
+### Past version 1.2
 ![Error Loading Gif](https://github.com/pieper-chris/cosmic-data/blob/master/gifs/cosmic1.gif)
 
 
