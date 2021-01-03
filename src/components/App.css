@@ -250,7 +250,7 @@
   color:navy;
   cursor: pointer;
 }
-.modal_button:active{
+/*.modal_button:active{
   animation: button_animation 2s;
 }
 
@@ -261,7 +261,7 @@
   to{
     transform: rotate(360deg);
   }
-}
+}*/
 
 .modal_div{
   position: absolute;
